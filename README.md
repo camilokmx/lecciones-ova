@@ -1,10 +1,10 @@
 # Lecciones OVA
 
-Aplicación web educativa desarrollada con Angular 21.0 para la gestión y presentación de contenidos de aprendizaje interactivos.
+Aplicación web educativa desarrollada para la presentación de "Prueba técnica para W-Tech por Camilo Rivera" con Angular 21.0 para la gestión y presentación de contenidos de aprendizaje interactivos.
 
 ## 📋 Descripción
 
-Este proyecto es un Objeto Virtual de Aprendizaje (OVA) que permite crear y presentar lecciones educativas de manera estructurada, incluyendo:
+Este proyecto pretende ser un Objeto Virtual de Aprendizaje (OVA) que permite crear y presentar lecciones educativas de manera estructurada, incluyendo:
 
 - **Introducción**: Presentación inicial del tema
 - **Objetivos**: Metas de aprendizaje
