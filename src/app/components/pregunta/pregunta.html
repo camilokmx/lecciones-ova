@@ -1,0 +1,13 @@
+<form [formGroup]="_form" (ngSubmit)="calificarRespuesta()">
+    <ul class="list-group">
+        <label class="list-group-item" *ngFor="let option of pregunta?.options">
+            <input type="radio" formControlName="respuesta" [value]="option.value" />
+            {{ option.label }}
+        </label>
+    </ul>
+    <button type="submit" class="btn btn-primary mt-3">Verificar</button>
+    @if(_resultado){
+    <div class="alert alert-{{_resultadoClass}}">{{ _resultado }}</div>
+    }
+    
+</form>

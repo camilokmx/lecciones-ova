@@ -1,20 +1,13 @@
 <nav class="navbar bg-body-tertiary border-bottom border-1 mb-2">
     <div class="container-fluid text-center">
-        <a class="navbar-brand mx-auto" href="#">Lección 1 - Título</a>
+        <a class="navbar-brand mx-auto" href="#">Lección 1 - Analítica de Datos en Educación</a>
     </div>
 </nav>
 <div class="container-fluid">
 
     <div class="row">
         <div class="col-12 col-lg-3">
-            <div class="list-group rounded-0">
-                <li class="list-group-item font-weight-bold text-primary text-center">Menú</li>
-                <!--Aunque en esta versión se usa @for uso ngFor para coherencia con la prueba -->
-                <a *ngFor="let item of _menuItems" [routerLink]="item.path"
-                    class="list-group-item list-group-item-action" routerLinkActive="active">
-                    {{item.label}}
-                </a>
-            </div>
+           <app-menu [menuItems]="_menuItems"></app-menu>
         </div>
         <div class="col-12 col-lg-9 border border-1 p-3">
             <router-outlet></router-outlet>

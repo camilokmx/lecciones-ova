@@ -1,0 +1,8 @@
+<div class="list-group rounded-0">
+    <li class="list-group-item font-weight-bold text-primary text-center">Menú</li>
+    @for (item of menuItems; track $index) {
+    <a [routerLink]="item.path" class="list-group-item list-group-item-action" routerLinkActive="active">
+        {{item.label}}
+    </a>
+    }
+</div>
